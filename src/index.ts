@@ -6,6 +6,8 @@ import type { Command } from './command';
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
+// normálisan megcsinálni a client.d.ts együtt
+
 client.commands = new Collection();
 
 const foldersPath = path.join(__dirname, './commands');
